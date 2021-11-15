@@ -123,4 +123,106 @@
   }
   
   
+  /* MEDIA QUERY FOR SMALLER DESKTOP AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+ 
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+ 
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
   
+  button #timerstart {
+    display: flex;
+  }
+ 
+  .wrapper {
+   text-align: center;
+ }
+ 
+  .wrapper, .quiz {
+   width: 100%;
+ }
+ 
+ .section-title {
+   width: 80%;
+ }
+ 
+ .trainer {
+   flex: 0 70%;
+ }
+ 
+ .contact-info iframe {
+   flex: 1 100%;
+ }
+ }
+ 
+ /* MEDIA QUERY FOR TABLES AND SMALLER */
+ @media  screen and (max-width: 768px) {
+   .section {
+     padding: 30px 15px;
+   }
+   
+ .step h3 {
+   flex: 1 100%;
+   text-align: center;
+ }
+ 
+ .step-info {
+   flex: 2 100%;
+   text-align: center;
+   justify-content: center;
+ }
+ 
+ .step-img {
+   flex: 0 32%;
+   margin-right: 0;
+   margin-top: 15px;
+   margin-bottom: 15px;
+ }
+ 
+ .step-text {
+   flex: 100%;
+ }
+ 
+ }
+ 
+ /* MEDIA QUERY FOR MONILE PHONES AND SMALLER */
+ @media screen and (max-width: 575px){
+   .hero-form button {
+     width: 100%;
+   }
+ 
+   .section-title {
+     width: 95%;
+   }
+   
+   .intro p {
+     width: 100%;
+   }
+ 
+ .trainer {
+   flex: 0 100px;
+ }
+ 
+ .contact-info {
+   text-align: center;
+ }
+ 
+ .contact-info > * {
+   flex: 0 100%;
+ }
+ 
+ .contact-form {
+   order: 3;
+ }
