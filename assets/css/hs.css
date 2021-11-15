@@ -1,0 +1,88 @@
+li {
+    text-decoration: none;
+    list-style-type: none;
+    background-color: white;
+  }
+
+  .button {
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    padding: 10px 15px;
+    margin-right: 40%;
+    margin-left: 40%;
+    background: greenyellow;
+    font-size: 2.2rem;
+    top: -3px;
+  
+} 
+
+.hwrapper {
+    display:flex;
+    justify-content: space-evenly;
+}
+.highs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    
+}
+.highs p {
+    font: 20px sans-serif;
+}
+
+.highs h1 {
+    font: 25px sans-serif;
+    font-weight: 700;
+    color: purple;
+}
+
+.highs ul {
+    font: 20px sans-serif;
+}
+
+.highs li {
+  background-color: white;
+  margin-top: 8px;
+  padding: 5px 20px;
+  font-size: 20px;
+  color: black;
+  list-style-type: number;
+  
+}
+/* MEDIA QUERY FOR TABLES AND SMALLER */
+@media  screen and (max-width: 768px) {
+    .highs {
+      padding: 30px 15px;
+    }
+    
+    header {
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+   }
+   .highscore {
+     width: 100%;
+ }
+ 
+ .timeleft {
+   margin-top: 15px; 
+   width: 100%;
+    
+ }
+  
+  }
+  
+  /* MEDIA QUERY FOR MONILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px){
+   
+   .button {
+     margin-right: 30%;
+     margin-left: 30%;
+     background: greenyellow;
+     font-size: 2.2rem;
+   }
+

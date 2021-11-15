@@ -33,7 +33,7 @@ var questionWrapper = document.querySelector(".quiz");
 var quizQuestions = document.querySelector(".questions");
 
 //quiz timer
-var timeLeft = 60;
+var timeLeft = 45;
 var interval = 0;
 var timePenalty = 10; 
 var createUlEl = document.createElement("ul");
@@ -50,7 +50,7 @@ var startquiz = function () {
             if (timeLeft <= 0) {
                 clearInterval(interval);
                 finishQuiz();
-                currentTime.textContent = "Time is up!";
+                currentTime.textContent = "You ran out of time!";
             }
         }, 1000)
     }
@@ -188,6 +188,7 @@ function finishQuiz() {
                 userScores = JSON.parse(userScores);
             }
             userScores.push(totalScore);
+            userScores.sort((a, b) => b.score - a.score);
             var updateScore = JSON.stringify(userScores);
             localStorage.setItem("userScores", updateScore);
             

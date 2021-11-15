@@ -19,6 +19,7 @@ if (userScores !== null) {
     for (var i = 0; i < userScores.length; i++) {
         var highScoreEl = document.createElement("li");
         highScoreEl.textContent = userScores[i].initials + " " + userScores[i].score;
+        highScoreEl.setAttribute("class", ".highs li")
         highScore.appendChild(highScoreEl);
     }
 }
