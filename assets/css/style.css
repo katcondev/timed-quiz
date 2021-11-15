@@ -61,6 +61,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  
     
 }
   .quiz p {
@@ -74,7 +75,9 @@
   }
 
   .quiz ul {
-      font: 20px sans-serif;
+      font: 25px sans-serif;
+     
+      padding-bottom: 20px;
   }
 
 .quiz li {
@@ -83,7 +86,7 @@
     padding: 5px 20px;
     font-size: 22px;
     color: black;
-    
+   
 }
 .quiz li:hover {
   background-color: purple;
