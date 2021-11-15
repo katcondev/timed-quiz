@@ -25,14 +25,20 @@
     justify-content:space-between;
   }
 
-  .highscore a {
+  .highscore  {
       width: 30%;
       color: var(--grey);
       text-align: center;
-      font-size: 16px;
+      
+      
+  }
+
+  .highscore a {
+  font-size: 16px;
       color:purple;
       text-decoration: none;
-  }
+}
+
 
   .highscore a:hover {
     color:greenyellow;
@@ -101,9 +107,13 @@
 }
 
 #initials {
-  font-size: 20px;
-  background-color: black;
-  color: greenyellow;
+  font-size: 24px;
+  color: purple;
+  line-weight:800;
+  line-height: 40px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
 }
 
   #timerstart {
