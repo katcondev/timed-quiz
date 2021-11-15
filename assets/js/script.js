@@ -180,7 +180,7 @@ function finishQuiz() {
                 score: timeLeft
             }
             console.log(totalScore);
-            var userScores = localStorage.getItem("allScores");
+            var userScores = localStorage.getItem("userScores");
             if (userScores === null) {
                 userScores = [];
             }
@@ -197,3 +197,6 @@ function finishQuiz() {
         }
     });
 }
+
+
+
