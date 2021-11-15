@@ -109,7 +109,7 @@ function verify(event) {
     questionIndex++;
     if (questionIndex >= questions.length) {
         finishQuiz();
-        createDivEl.textContent = "Your scoe is: " + score + "/" + questions.length + "."; 
+        createDivEl.textContent = "Your score is: " + score + "/" + questions.length + "."; 
     }
     else {
         render(questionIndex);
@@ -137,7 +137,7 @@ function finishQuiz() {
     if (timeLeft >= 0) {
         var timeScore = timeLeft;
         clearInterval(interval)
-        pEl.textContent = "Your scored a total of " + timeScore + ".";
+        pEl.textContent = "You scored a total of " + timeScore + ".";
         quizQuestions.appendChild(pEl);
     }
     //create label
